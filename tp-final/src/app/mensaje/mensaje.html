@@ -1,0 +1,6 @@
+<p>componente mensaje</p>
+
+<h1>{{mensaje1}}</h1>
+
+<button (click)="mostrar = !mostrar">{{mostrar ? 'Ocultar': 'Mostrar'}} Mensaje</button>  
+<h2 *ngIf="mostrar">{{mensaje2}}</h2>
