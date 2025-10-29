@@ -1,43 +1,60 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #f0f8ff;
-  border-radius: 10px;
+  background-color: #2B2D42; /* fondo gris azulado */
+  border-radius: 12px;
   padding: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width: 230px;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(249, 168, 38, 0.3); /* reflejo dorado */
 }
 
-img {
+/* Imagen */
+.card img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   object-fit: cover;
   max-height: 200px;
 }
 
+/* Contenido */
 .contenido {
-  padding: 8px;
+  padding: 10px;
 }
 
+/* Título */
 h3 {
   margin: 0 0 8px 0;
-  color: #005fa3;
+  color: #F9A826; /* dorado cálido */
+  font-size: 1.1rem;
 }
 
+/* Descripción */
+.contenido p {
+  color: #B8C1EC; /* gris lavanda */
+  font-size: 0.9rem;
+  min-height: 40px;
+}
+
+/* Botón */
 button {
-  margin-top: 8px;
-  padding: 6px 12px;
-  background-color: #007acc;
-  color: white;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #F9A826; /* dorado */
+  color: #2B2D42; /* contraste oscuro */
+  font-weight: 600;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: #00ADB5; /* celeste petróleo */
+  color: #FFFFFF;
 }

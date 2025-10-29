@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class FooterComponent {
-  textoFooter: string = '© 2025 Mi Aplicación de Películas. Todos los derechos reservados.';
+  textoFooter: string = '© 2025 Micaela Alancay. Todos los derechos reservados.';
 }

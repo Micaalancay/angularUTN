@@ -1,7 +1,12 @@
 <h2> Lista de Películas</h2>
-
+<div class="detalle">
+  <h3>Detalle de la pelicula seleccionada</h3>
+  <p>{{movie}}</p>
+</div>
 <div class="contenedor">
-  <app-movie-item  *ngFor="let movie of movies" [movie]="movie" ></app-movie-item>>
+  <app-movie-item  *ngFor="let movie of movies
+  " [movie]="movie" 
+   (movieSelected)="onMovieSelected($event)"></app-movie-item>>
  
 </div>
 

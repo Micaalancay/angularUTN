@@ -1,15 +1,8 @@
-.footer {
-  background-color: #1e1e2f;
-  color: white;
+footer {
   text-align: center;
-  padding: 12px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-size: 14px;
-  border-top: 2px solid #007acc;
-}
-
-p {
-  margin: 0;
+  background-color: #2B2D42;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #B8C1EC;
+  margin-top: 40px;
 }
